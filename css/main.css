@@ -5,3 +5,49 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+img:nth-child(2n) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img:nth-child(2n) {
+    display: inline-block;
+  }
+
+  img {
+    width: 49%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img:first-child {
+    display: none;
+  }
+
+  img {
+    width: 32%;
+  }
+
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img:first-child {
+    display: inline-block;
+  }
+
+  img {
+    width: 24%;
+  }
+
+}
